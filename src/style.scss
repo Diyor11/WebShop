@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+:root{
+    --bg-clip: #746CB9;
+    // --clip-path: clip-path: polygon(59% 0, 100% 0, 100% 100%, 39% 100%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.py-56{
+    padding-top: 56px;
+    box-sizing: border-box;
+}
+i{cursor: pointer;}

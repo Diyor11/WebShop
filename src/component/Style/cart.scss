@@ -1,0 +1,97 @@
+
+.card-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    h1{
+        font-size: 37px;
+        color: #dc3545;
+        span{
+            font-size: 32px;
+            color: #007BFF;
+        }
+    }
+    .buttons{
+        button{
+            outline: none;
+            border: none;
+            margin: 0 10px;
+            color: #fff;
+            font-size: 13px;
+            padding: 7px 15px;
+            border-radius: 3px;
+            font-weight: 500;
+            &:first-child{
+                background-color: #DC3545;
+            }
+            &:last-child{
+                background-color: #007BFF;
+            }
+        }
+    }
+}
+.col-card{
+    .card-box{
+        width: fit-content;
+        margin: 0 auto;
+        padding: 10px;
+        box-sizing: border-box;
+        border: 1px solid #000;
+        img{
+            width: 224px;
+            height: 230px;
+            object-fit: cover;
+        }
+        .text-wrap{
+            padding: 10px 0;
+            .card-info{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            .control{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .num{
+                    display: flex;
+                    align-items: center;
+                    span{
+                        font-size: 16px;
+                        padding: 3px 12px;
+                        border: 1px solid #000;
+                        &:nth-child(2){
+                            border-left: none;
+                            border-right: none;
+                        }
+                        cursor: pointer;
+                    }
+                }
+                button{
+                    outline: none;
+                    background-color: #007BFF;
+                    font-size: 13px;
+                    font-weight: 500;
+                    border-radius: 3px;
+                    border: 1px solid #000;
+                    padding: 7px 13px;
+                    color: #fff;
+                    i{
+                        padding: 0 0 0 3px;
+                        color: #000
+                    }
+                }
+            }
+        }
+    }
+}
+.card-title{color: #333;text-decoration: underline; padding: 15px 0;}
+
+@media(max-width: 750px){
+    .card-menu{
+        display: block;
+        text-align: center;
+    }
+    .card-title{span{display: none;}}
+}

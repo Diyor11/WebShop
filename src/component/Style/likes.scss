@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+.black{
+    color: #000;
+}
+.muted{
+    color: #777;
+}
+.green{color: #0ba00b;}
+
+#likes{
+    width: 100%;
+    .container{
+        .likes-title{
+            font-size: 45px;
+            padding: 20px 0;
+            font-family: 'Nunito', sans-serif;
+        }
+        .sort{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            h4{margin-bottom: 0;}
+            .icons{
+                display: flex;
+                align-items: center;
+                h5{margin-bottom: 0;}
+                i{
+                    padding: 0 10px;
+                    font-size: 20px;
+                    position: relative;
+                    &:hover p{
+                        display: block;
+                    }
+                    p{
+                        position: absolute;
+                        top: -30px;
+                        right: -7px;
+                        color: #fff;
+                        font-size: 11px;
+                        background-color: #333;
+                        padding: 3px 7px;
+                        display: none;
+                        border-radius: 5px;
+                        text-align: center;
+                    }
+                }
+                button{
+                    outline: none;
+                    background-color: transparent;
+                    border: 1.5px solid #3937b3;
+                    border-radius: 4px;
+                    margin-left: 15px;
+                    padding: 5px 12px;
+                    color: #3937b3;
+                    box-sizing: border-box;
+                    &:hover{
+                        color: #fff;
+                        background-color: #3937b3;
+                        border-color: #3937b3;
+                        transition: 1s;
+                    }
+                }
+            }
+        }
+        .row{
+            padding-top: 20px;
+            padding-bottom: 15px;
+            .col{
+                padding: 30px 20px 0;
+                .box{
+                    width: 100%;
+                    padding: 15px;
+                    position: relative;
+                    border: 1px solid #555;
+                    
+                    .img-wrapper{
+                        &:hover{
+                        img{
+                            transform: scale(1.2);
+                        }
+                        }  
+                    }
+                    .img-wrapper{
+                        width: 100%;
+                        height: 450px;
+                        overflow: hidden;
+                        img{
+                            width: 100%;
+                            height: 450px;
+                            object-fit: cover;
+                            border-bottom: 1px solid #555;
+                            padding-bottom: 10px;
+                            transform: scale(1);
+                            transition: .3s;
+                        }
+                    }   
+                    .card-text{
+                        padding-top: 10px;
+                        width: 100%;
+                        box-sizing: border-box;
+                        padding-bottom: 18px;
+                        p{
+                            color: #777;
+                            font-size: 13px;
+                        }
+                        .card-info{
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            h5{text-transform: capitalize !important;}
+                        }
+                    }
+                    .add-cart{
+                        animation: 1s linear;
+                        position: absolute;
+                        bottom: 15px;
+                        right: 15px;
+                        font-size: 23px;
+                    }
+                    .carted{
+                        animation-name: cartAdd;
+                    }
+                    .add-like{
+                        position: absolute;
+                        bottom: 15px;
+                        right: 56px;
+                        color: crimson;
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width: 750px){
+    .sort{
+        h4{font-size: 18px;}
+        .icons{
+            h5{display: none;}
+            i{display: none;}
+            button{
+                span{display: none;}
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+@keyframes cartAdd{
+    0%{
+        font-size: 23px;
+        transform: rotate(0deg);
+    }
+    25%{
+        font-size: 25px;
+        transform: rotate(25deg);
+    }
+    50%{
+        font-size: 25px;
+        transform: rotate(-25deg);
+    }
+    100%{
+        font-size: 23px;
+        transform: rotate(0deg);       
+    }
+}

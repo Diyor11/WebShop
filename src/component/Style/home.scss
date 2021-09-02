@@ -1,0 +1,93 @@
+#navbar{
+    background-color: transparent;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url('../asstets/mainBg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    overflow: hidden;
+    .container-c{
+        height: 100%;
+        box-sizing: border-box;
+        padding-top: 56px;
+        .row-c{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            div{flex-basis: 50%;}
+            .left-side{
+                padding-top: 15%;
+                color: #fff;
+                p{
+                    padding: 20px 0;
+                }
+                a{
+                    border: 1.5px solid crimson;
+                    padding: 15px 25px;
+                    border-radius: 10px;
+                    transform: 0.3s;
+                    &:hover{
+                        background-color: crimson;
+                        color: #fff !important;
+                    }
+                }
+            }
+            .right-side{
+                padding: 0 20px;
+                padding-top: 20px;
+                .box-wrapper{
+                    display: flex;
+                    flex-wrap: wrap;
+                    .box{
+                        position: relative;
+                        padding: 15px 15px 0;
+                        box-sizing: border-box;
+                        border-radius: 9px;
+                        overflow: hidden;
+                        &:hover{
+                            transform: translateY(-7px);
+                        }
+                        img{
+                            width: 100%;
+                            height: 250px;
+                            border-radius: 9px;
+                        }
+                        .text-box{
+                            color: #fff;
+                            position: absolute;
+                            top: 25px;
+                            width: 80%;
+                            margin: 0 10%;
+                            h3{
+                                font-size: 16.5px;
+                                padding: 3px 0;
+                            }
+                            p{
+                                font-size: 13px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width: 750px){
+    header{
+        .container-c{
+            padding-top: 106px;
+            box-sizing: border-box;
+            .row-c{
+                div{
+                    flex: 1;
+                }
+                .right-side{
+                    display: none;
+                }
+            }
+        }
+    }
+}
